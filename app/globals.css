@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card{
+  color: black;
+}
+
+.detailcontainer{
+  color: black;
+}
+
+.card {
+  top: 50px;
+  position: relative;
+  width: calc(100% - 20px); /* Full width with 10px space on each side */
+  max-width: 1000px; /* Maximum width for larger screens */
+  height: auto; /* Allow height to adjust based on content */
+  margin: 20px auto; /* Center the card with spacing */
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden; /* Prevent content overflow */
+  display: flex;
+  flex-direction: row; /* Default: Image on the left, content on the right */
+  align-items: center;
+  box-sizing: border-box;
+  margin-left: 320px;
+  
+}
+
+/* Card Image Container */
+.card-image-container {
+  flex: 0 0 150px; /* Fixed size for image container */
+  margin-right: 20px; /* Space between image and content */
+  display: flex;
+  justify-content: flex-start; /* Align image at the start */
+  align-items: flex-start; /* Align image at the top */
+}
+
+.card-image {
+  width: 100%; /* Make the image fill its container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px;
+  object-fit: cover; /* Ensure the image scales properly */
+}
+
+/* Card Content */
+.card-content {
+  flex: 1; /* Allow content to take up remaining space */
+  display: flex;
+  flex-direction: column; /* Stack text vertically */
+  justify-content: center; /* Center-align content vertically */
+  text-align: left; /* Align text to the left */
+}
+
+.card-content .sectiontitle {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: gray;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+/* malayalm font */
+.card-content .card-title {
+  font-size: 16px;
+  font-family: "Noto Sans Malayalam", sans-serif;
+  margin-bottom: 5px;
+}
+
+.card-content .itemtitlelead {
+  font-size: 14px;
+ font-family: "Noto Sans Malayalam", sans-serif;
+  color: rgb(109, 109, 109);
+  
+}
+
+
+        .nv {
+          color: rgb(3, 3, 3);
+          position: fixed;
+          background-color: white;
+          padding: 10px 20px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+          z-index: 1000;
+          width: 100%;
+         top: 0;
+        }
+
+        .uls {
+          list-style: none;
+          display: flex;
+          justify-content: center;
+          padding: 0;
+          margin: 0;
+        }
+
+
+
+
+        
+        .lis {
+          margin: 0 15px;
+        }
+
+        .lis a {
+          text-decoration: none;
+          color: rgb(3, 3, 3);
+          font-size: 16px;
+          font-weight: bold;
+          transition: color 0.3s;
+        }
+
+        .lis a:hover {
+          color: #f39c12;
+        }
+
+        .detailcontainer{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          color: black;
+          margin-top: 10px;
+          
+         
+        }
+        .crd{
+          background-color: white;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          margin-top: 100px;
+        }
+
+        
